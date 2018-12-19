@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form | FCC Project - 2</title>
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+
+    <main id="main">
+      <p id="description">Help us improve The Macauley Institute for Research</p>
+
+      <form id="survey-form" action="index.html" method="post">
+        <div >
+          <label id="name-label" for="name" class="toggleleft">Name: </label>
+          <input id="name" class="toggleright" type="text" name="name" pattern="(.*)\s(.*)" placeholder="Enter your Name" required autofocus>
+        </div>
+        <div >
+          <label id="email-label" for="email" class="toggleleft">Email:</label>
+          <input id="email" class="toggleright" type="email" name="email" placeholder="Enter your Email" required>
+        </div>
+        <div >
+          <label id="number-label" for="number" class="toggleleft">Age:</label>
+          <input id="number" class="toggleright" type="number" name="number" value="0" min="1" max="150" placeholder="Enter your Age" required>
+        </div>
+
+        <label for="dropdown" class="toggleleft">Which option best describes your current role?</label>
+        <div class="toggleright">
+          <select id="dropdown">
+            <option value="">Choose an option</option>
+            <option value="">Student</option>
+            <option value="">Core Staff</option>
+            <option value="">Researcher</option>
+            <option value="">Prefer not to say</option>
+            <option value="">Other</option>
+          </select>
+        </div>
+
+          <br>
+          <label class="toggleleft">How often do you read/subscribe Macauley Institute's Newsletter?</label>
+            <div>
+            <label for="newsletter"><input class="radboxes" type="radio" name="newsletter" value="1">
+            Always</label>
+            <br>
+            <label for="newsletter"><input class="radboxes" type="radio" name="newsletter" value="2">
+            Occasionally</label>
+            <br>
+            <label for="newsletter"><input class="radboxes" type="radio" name="newsletter" value="3">
+            Never Subscribe</label>
+            <br>
+            <label for="newsletter"><input class="radboxes" type="radio" name="newsletter" value="4">
+            Other</label>
+            </div>
+
+          <label class="toggleleft">What are your skill sets?</label>
+          <div>
+          <input class="radboxes" type="checkbox" name="skill" value="1">
+          <label for="skill">Researcher</label>
+          <br>
+          <input class="radboxes" type="checkbox" name="skill" value="2">
+          <label for="skill">Data Analyst</label>
+          <br>
+          <input class="radboxes" type="checkbox" name="skill" value="3">
+          <label for="skill">Information Specialist</label>
+          <br>
+          <input class="radboxes" type="checkbox" name="skill" value="4">
+          <label for="skill">Finance Expert</label>
+          <br>
+          <input class="radboxes" type="checkbox" name="skill" value="5">
+          <label for="skill">M&E Specialist</label>
+        </div>
+
+        <div >
+          <div for="comment" class="toggleleft">Any additional Comment or Suggestion?</div>
+          <textarea id="comment" class="toggleright" name="comment" rows="4" cols="30" placeholder="Comment Here"></textarea>
+        </div>
+        <input id="submit" type="submit" name="submit" value="Submit">
+      </form>
+    </main>
+  </body>
+</html>

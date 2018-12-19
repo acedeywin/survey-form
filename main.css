@@ -1,0 +1,15 @@
+body {max-width: 100%; height: auto; font-family: 'ZCOOL XiaoWei', serif; display: flex !important; flex-direction: column; align-items: center; background: linear-gradient(60deg, #99ddff, #ffffff, #99ddff, #ffffff);}
+#main { border: solid #ffffff; border-radius: 5px; box-shadow: 0px 5px 15px 0px rgba(153,153,153,0.5); padding: 20px 40px 30px 40px; margin-bottom: 40px; background-color: #ffffff;}
+#description {text-align: center;}
+#name-label {margin-top: 10px;}
+.toggleright {margin: 10px 0px 10px 0px;}
+.toggleleft {text-align: left;}
+#name {width: 50%; padding: 10px 5px 10px 5px; border-radius: 5px;}
+#email {width: 50%; padding: 10px 5px 10px 5px; border-radius: 5px;}
+#number {width: 50%; margin-left: 12px; padding: 10px 5px 10px 5px; border-radius: 5px;}
+#dropdown {width: 53%; margin-left: 45px; padding: 10px 5px 10px 5px; border-radius: 5px;}
+#comment {padding: 10px 5px 10px 5px; border-radius: 5px; background-color: #f2f2f2;}
+ .radboxes {padding-left: 37px; margin-top:5px; margin-bottom:15px; cursor: pointer; position: relative; }
+input[type="submit"]  {font-weight: bold; background-color: #00aaff; color: #ffffff; padding: 10px 20px 10px 20px; border-radius: 8px; border: solid #ffffff;}
+input:hover[type="submit"] {font-weight: bold; cursor: pointer; background-color: #cceeff; color: #000000;}
+input[type="radio"] {background-color: black;}
